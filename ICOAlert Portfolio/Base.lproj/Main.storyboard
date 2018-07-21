@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -318,7 +319,7 @@
                                                 <state key="normal" backgroundImage="anything app"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1s-8D-aYU">
-                                                <rect key="frame" x="0.0" y="4" width="50" height="50"/>
+                                                <rect key="frame" x="8" y="4" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" image="return"/>
                                                 <connections>
@@ -326,7 +327,7 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.92538958787918091" green="0.92554813623428345" blue="0.92537957429885864" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1250" id="jKh-Np-QC6"/>
                                         </constraints>
@@ -506,19 +507,31 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NAH-xv-WUI">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" red="0.023529411760000001" green="0.41176470590000003" blue="0.22304949660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="PBa-2T-fgH"/>
                                 </constraints>
                             </view>
                             <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5bE-ke-SAM">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <color key="barTintColor" red="0.023529411760000001" green="0.41176470590000003" blue="0.22304949660000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="News Reader" id="QCX-q0-uOT"/>
+                                    <navigationItem title="Cryptocurrency News" id="QCX-q0-uOT">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="vNv-Nx-zQg">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cBy-Eo-EpA">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="return"/>
+                                                <connections>
+                                                    <segue destination="SSc-Cq-aBG" kind="show" id="Jm6-E7-g4w"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="199" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6PW-n9-Zwm">
@@ -558,6 +571,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstItem="xev-0F-07X" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4sB-L1-PUy" secondAttribute="bottom" constant="8" id="4KQ-kd-BVP"/>
                                                 <constraint firstItem="4sB-L1-PUy" firstAttribute="top" secondItem="xCc-rf-rjU" secondAttribute="bottom" constant="8" id="60H-cE-os9"/>
@@ -572,6 +586,7 @@
                                                 <constraint firstItem="xev-0F-07X" firstAttribute="trailing" secondItem="OWV-C9-BzV" secondAttribute="trailingMargin" id="b6j-cz-TIA"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="author" destination="xev-0F-07X" id="ok7-qw-jes"/>
                                             <outlet property="desc" destination="4sB-L1-PUy" id="d6b-dT-Uee"/>
@@ -586,7 +601,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="vN8-bW-746" firstAttribute="bottom" secondItem="6PW-n9-Zwm" secondAttribute="bottom" id="3td-IJ-Ief"/>
                             <constraint firstItem="5bE-ke-SAM" firstAttribute="leading" secondItem="vN8-bW-746" secondAttribute="leading" id="8B1-62-izL"/>
@@ -608,7 +623,77 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGg-YM-lvk" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3455" y="132"/>
+            <point key="canvasLocation" x="3013.5999999999999" y="131.78410794602701"/>
+        </scene>
+        <!--Webview View Controller-->
+        <scene sceneID="cMS-Ra-6Oq">
+            <objects>
+                <viewController storyboardIdentifier="web" id="kHS-q2-0va" customClass="webviewViewController" customModule="ICOAlert_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xDA-ZJ-wkm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB9-YM-egj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.3694111704826355" green="0.26040926575660706" blue="0.65699517726898193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Cryptocurrency News" id="Df2-41-xjv">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="xg8-La-glR">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vjV-qc-ADQ">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="return"/>
+                                                <connections>
+                                                    <segue destination="5Zo-RM-tZf" kind="show" id="Tt4-0G-uk3"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjB-25-uUa">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fo-1W-GpH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9fo-1W-GpH" secondAttribute="height" multiplier="125:201" id="r33-vV-UF7"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9fo-1W-GpH" firstAttribute="leading" secondItem="4FI-Hx-pZM" secondAttribute="leading" id="7ad-wa-9qf"/>
+                            <constraint firstAttribute="trailing" secondItem="gjB-25-uUa" secondAttribute="trailing" id="BiD-4W-0CO"/>
+                            <constraint firstItem="gjB-25-uUa" firstAttribute="top" secondItem="xDA-ZJ-wkm" secondAttribute="top" id="K2L-6j-qOg"/>
+                            <constraint firstItem="9fo-1W-GpH" firstAttribute="trailing" secondItem="4FI-Hx-pZM" secondAttribute="trailing" id="K37-Cu-LLm"/>
+                            <constraint firstItem="DB9-YM-egj" firstAttribute="leading" secondItem="4FI-Hx-pZM" secondAttribute="leading" id="Xmi-Gr-eVi"/>
+                            <constraint firstItem="DB9-YM-egj" firstAttribute="top" secondItem="gjB-25-uUa" secondAttribute="bottom" id="YCa-Du-SDA"/>
+                            <constraint firstItem="DB9-YM-egj" firstAttribute="trailing" secondItem="4FI-Hx-pZM" secondAttribute="trailing" id="Zzb-DI-eIb"/>
+                            <constraint firstItem="9fo-1W-GpH" firstAttribute="top" secondItem="DB9-YM-egj" secondAttribute="bottom" id="bmy-FX-Qoh"/>
+                            <constraint firstItem="gjB-25-uUa" firstAttribute="leading" secondItem="xDA-ZJ-wkm" secondAttribute="leading" id="ktk-nm-8PK"/>
+                            <constraint firstItem="9fo-1W-GpH" firstAttribute="bottom" secondItem="4FI-Hx-pZM" secondAttribute="bottom" id="t4s-a8-mDE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4FI-Hx-pZM"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="9fo-1W-GpH" id="RS1-7P-p5u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Xq-AV-grb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3868" y="131.78410794602701"/>
         </scene>
     </scenes>
     <resources>
@@ -642,7 +727,8 @@
         <image name="username-1" width="230" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="5W9-eP-wCa"/>
+        <segue reference="Tt4-0G-uk3"/>
+        <segue reference="Jm6-E7-g4w"/>
         <segue reference="CRQ-ye-FSS"/>
     </inferredMetricsTieBreakers>
 </document>
