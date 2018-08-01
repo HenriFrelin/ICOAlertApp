@@ -8,12 +8,12 @@
 
 import UIKit
 
-class projectViewController: UIViewController {
+class projectViewController2: UIViewController {
     
     
     @IBOutlet weak var webview: UIWebView!
     
-    var url = "https://anything.app/"
+    var url = "https://www.datablockchain.io/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,4 +22,3 @@ class projectViewController: UIViewController {
         
     }
 }
-

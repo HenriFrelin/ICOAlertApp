@@ -302,28 +302,29 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2I-Zw-Tsj">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1250"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBd-C4-dgK">
-                                                <rect key="frame" x="37" y="313" width="300" height="195"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <state key="normal" backgroundImage="ico 3"/>
-                                            </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZMa-6c-xi4">
                                                 <rect key="frame" x="37" y="110" width="300" height="195"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="anything app"/>
+                                                <connections>
+                                                    <segue destination="WIe-CB-LQP" kind="show" id="hps-ao-H9U"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9WR-ga-LJ0">
                                                 <rect key="frame" x="37" y="516" width="300" height="195"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="ico 4"/>
                                                 <connections>
-                                                    <segue destination="WIe-CB-LQP" kind="show" id="zhU-wj-vE3"/>
+                                                    <segue destination="SJE-rD-b5g" kind="show" id="99X-hF-nNY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2R-rU-BL8">
-                                                <rect key="frame" x="37" y="719" width="300" height="195"/>
+                                                <rect key="frame" x="37" y="313" width="300" height="195"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="moneytoken"/>
+                                                <connections>
+                                                    <segue destination="ggx-mb-Ub1" kind="show" id="VnB-g1-Ukp"/>
+                                                </connections>
                                             </button>
                                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Search Projects" translatesAutoresizingMaskIntoConstraints="NO" id="IMq-Us-Oum">
                                                 <rect key="frame" x="0.0" y="54" width="375" height="56"/>
@@ -334,6 +335,9 @@
                                                 <rect key="frame" x="37" y="922" width="300" height="195"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" backgroundImage="anything app"/>
+                                                <connections>
+                                                    <segue destination="WIe-CB-LQP" kind="show" id="6fP-0A-nfo"/>
+                                                </connections>
                                             </button>
                                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="000-zU-eSR">
                                                 <rect key="frame" x="0.0" y="10" width="375" height="44"/>
@@ -358,6 +362,11 @@
                                                     </navigationItem>
                                                 </items>
                                             </navigationBar>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBd-C4-dgK">
+                                                <rect key="frame" x="37" y="719" width="300" height="195"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="ico 3"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.9520307183265686" green="0.94941133260726929" blue="0.92776089906692505" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -413,6 +422,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="Conversation" id="lou-JR-udS">
                                             <color key="tintColor" red="0.37707540392875671" green="0.26407402753829956" blue="0.66844397783279419" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <segue destination="SJE-rD-b5g" kind="show" id="oGN-s0-sjj"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -423,13 +435,13 @@
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe Card" translatesAutoresizingMaskIntoConstraints="NO" id="c1f-qI-kPz">
                                         <rect key="frame" x="0.0" y="0.0" width="319" height="368"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-UX-Lg8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DataBlocker" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zxF-UX-Lg8">
                                         <rect key="frame" x="8" y="307" width="303" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.91573458910000005" green="0.36728408930000001" blue="0.42354103920000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="S8d-IJ-CD2">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DBC" translatesAutoresizingMaskIntoConstraints="NO" id="S8d-IJ-CD2">
                                         <rect key="frame" x="10" y="5" width="299" height="294"/>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="uOW-e0-mB9">
@@ -465,7 +477,7 @@
                                             </imageView>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hen-HD-ahI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Merging Big Dta, AI, &amp; Blockchain Tech. " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hen-HD-ahI">
                                         <rect key="frame" x="8" y="339.5" width="303" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
@@ -1114,13 +1126,224 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ad7-cG-Sb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3014" y="-1131"/>
+            <point key="canvasLocation" x="2921" y="-1388"/>
+        </scene>
+        <!--Project View Controller1-->
+        <scene sceneID="L3t-Lg-S3C">
+            <objects>
+                <viewController storyboardIdentifier="1" id="ggx-mb-Ub1" customClass="projectViewController1" customModule="ICOAlert_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rK4-cv-yMc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMS-N6-gTx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.3694111705" green="0.26040926580000001" blue="0.65699517730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="jGF-Ae-KfV">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="3Sr-cX-1np">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kaZ-uZ-Hhp">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="return"/>
+                                                <connections>
+                                                    <segue destination="HhX-on-0Gx" kind="show" id="nnn-9Z-WZU"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP6-hL-7sB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5B5-4m-czP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="5B5-4m-czP" secondAttribute="height" multiplier="125:201" id="uU0-2w-TLF"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TMS-N6-gTx" firstAttribute="leading" secondItem="yMJ-qU-ndI" secondAttribute="leading" id="PGG-bD-IWl"/>
+                            <constraint firstItem="CP6-hL-7sB" firstAttribute="top" secondItem="rK4-cv-yMc" secondAttribute="top" id="U0H-l1-spV"/>
+                            <constraint firstItem="TMS-N6-gTx" firstAttribute="trailing" secondItem="yMJ-qU-ndI" secondAttribute="trailing" id="YY5-F3-3qH"/>
+                            <constraint firstItem="5B5-4m-czP" firstAttribute="bottom" secondItem="yMJ-qU-ndI" secondAttribute="bottom" id="aAQ-Il-xkd"/>
+                            <constraint firstItem="TMS-N6-gTx" firstAttribute="top" secondItem="CP6-hL-7sB" secondAttribute="bottom" id="bpJ-jN-aJe"/>
+                            <constraint firstItem="5B5-4m-czP" firstAttribute="top" secondItem="TMS-N6-gTx" secondAttribute="bottom" id="fTR-yI-VlS"/>
+                            <constraint firstItem="5B5-4m-czP" firstAttribute="trailing" secondItem="yMJ-qU-ndI" secondAttribute="trailing" id="mTH-NE-EBD"/>
+                            <constraint firstItem="CP6-hL-7sB" firstAttribute="leading" secondItem="rK4-cv-yMc" secondAttribute="leading" id="odG-Lz-63q"/>
+                            <constraint firstAttribute="trailing" secondItem="CP6-hL-7sB" secondAttribute="trailing" id="sGv-Pk-2Y4"/>
+                            <constraint firstItem="5B5-4m-czP" firstAttribute="leading" secondItem="yMJ-qU-ndI" secondAttribute="leading" id="yO7-04-cix"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yMJ-qU-ndI"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="5B5-4m-czP" id="Akc-QP-j9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wre-GE-mOQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3575" y="-1209"/>
+        </scene>
+        <!--Project View Controller2-->
+        <scene sceneID="z6y-io-SEX">
+            <objects>
+                <viewController storyboardIdentifier="2" id="SJE-rD-b5g" customClass="projectViewController2" customModule="ICOAlert_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g3b-hN-LcH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aed-zs-R76">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.3694111705" green="0.26040926580000001" blue="0.65699517730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="IHK-gQ-5th">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="kpN-Zf-O8I">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QDj-lY-iUq">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="return"/>
+                                                <connections>
+                                                    <segue destination="HhX-on-0Gx" kind="show" id="Aqa-tG-eFG"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38u-LJ-RfD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W1K-yh-B0m">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="W1K-yh-B0m" secondAttribute="height" multiplier="125:201" id="R7t-zX-a2a"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Aed-zs-R76" firstAttribute="leading" secondItem="B0A-v9-Eg6" secondAttribute="leading" id="0vB-pD-YnB"/>
+                            <constraint firstAttribute="trailing" secondItem="38u-LJ-RfD" secondAttribute="trailing" id="DLe-s6-JyV"/>
+                            <constraint firstItem="Aed-zs-R76" firstAttribute="top" secondItem="38u-LJ-RfD" secondAttribute="bottom" id="Mdn-0q-t7S"/>
+                            <constraint firstItem="W1K-yh-B0m" firstAttribute="trailing" secondItem="B0A-v9-Eg6" secondAttribute="trailing" id="PbK-d1-2aR"/>
+                            <constraint firstItem="38u-LJ-RfD" firstAttribute="leading" secondItem="g3b-hN-LcH" secondAttribute="leading" id="RLc-gh-n6A"/>
+                            <constraint firstItem="W1K-yh-B0m" firstAttribute="bottom" secondItem="B0A-v9-Eg6" secondAttribute="bottom" id="U4D-KE-PQ3"/>
+                            <constraint firstItem="38u-LJ-RfD" firstAttribute="top" secondItem="g3b-hN-LcH" secondAttribute="top" id="oao-pq-BDk"/>
+                            <constraint firstItem="Aed-zs-R76" firstAttribute="trailing" secondItem="B0A-v9-Eg6" secondAttribute="trailing" id="rsH-Gd-t8g"/>
+                            <constraint firstItem="W1K-yh-B0m" firstAttribute="top" secondItem="Aed-zs-R76" secondAttribute="bottom" id="vj0-JS-eEC"/>
+                            <constraint firstItem="W1K-yh-B0m" firstAttribute="leading" secondItem="B0A-v9-Eg6" secondAttribute="leading" id="zBz-T6-el9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B0A-v9-Eg6"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="W1K-yh-B0m" id="cQc-SM-2a3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIB-Za-jrQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4223" y="-1059"/>
+        </scene>
+        <!--Project View Controller3-->
+        <scene sceneID="cBq-DW-M3Z">
+            <objects>
+                <viewController storyboardIdentifier="3" id="sTN-iR-s56" customClass="projectViewController3" customModule="ICOAlert_Portfolio" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O59-9k-y8e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar opaque="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Dl-E1-gmn">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="backgroundColor" red="0.3694111705" green="0.26040926580000001" blue="0.65699517730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="barTintColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="textShadowColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem id="nTJ-Ii-ZmQ">
+                                        <barButtonItem key="leftBarButtonItem" style="plain" id="fC5-4b-mjF">
+                                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="yu9-DN-lbx">
+                                                <rect key="frame" x="16" y="0.0" width="50" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" image="return"/>
+                                                <connections>
+                                                    <segue destination="HhX-on-0Gx" kind="show" id="bMo-dL-dUi"/>
+                                                </connections>
+                                            </button>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kps-AN-phA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7Z-xj-Tsf">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g7Z-xj-Tsf" secondAttribute="height" multiplier="125:201" id="bPo-pH-HQL"/>
+                                </constraints>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95203071829999997" green="0.94941133259999999" blue="0.92776089910000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kps-AN-phA" firstAttribute="top" secondItem="O59-9k-y8e" secondAttribute="top" id="2Uo-Fk-au3"/>
+                            <constraint firstItem="kps-AN-phA" firstAttribute="leading" secondItem="O59-9k-y8e" secondAttribute="leading" id="HqE-Pe-g4D"/>
+                            <constraint firstItem="g7Z-xj-Tsf" firstAttribute="leading" secondItem="gYe-2M-vkg" secondAttribute="leading" id="Xba-2K-fpA"/>
+                            <constraint firstItem="2Dl-E1-gmn" firstAttribute="trailing" secondItem="gYe-2M-vkg" secondAttribute="trailing" id="aPw-pi-e9t"/>
+                            <constraint firstAttribute="trailing" secondItem="kps-AN-phA" secondAttribute="trailing" id="aru-2V-unt"/>
+                            <constraint firstItem="2Dl-E1-gmn" firstAttribute="leading" secondItem="gYe-2M-vkg" secondAttribute="leading" id="iJO-VS-0Fi"/>
+                            <constraint firstItem="g7Z-xj-Tsf" firstAttribute="trailing" secondItem="gYe-2M-vkg" secondAttribute="trailing" id="ml0-lh-f5m"/>
+                            <constraint firstItem="2Dl-E1-gmn" firstAttribute="top" secondItem="kps-AN-phA" secondAttribute="bottom" id="v4h-JA-0r2"/>
+                            <constraint firstItem="g7Z-xj-Tsf" firstAttribute="top" secondItem="2Dl-E1-gmn" secondAttribute="bottom" id="yrh-yd-xd7"/>
+                            <constraint firstItem="g7Z-xj-Tsf" firstAttribute="bottom" secondItem="gYe-2M-vkg" secondAttribute="bottom" id="zsc-Gk-yvq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gYe-2M-vkg"/>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="g7Z-xj-Tsf" id="XGw-Cr-gD8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fY-FE-kPK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4866" y="-788"/>
         </scene>
     </scenes>
     <resources>
         <image name="1_Fbs0EgkiEQGO5eP_N70vlg" width="346" height="50"/>
         <image name="Background" width="375" height="667"/>
         <image name="Conversation" width="25" height="24"/>
+        <image name="DBC" width="280" height="180"/>
         <image name="Like" width="54" height="54"/>
         <image name="Login Btn Copy" width="230" height="45"/>
         <image name="Login Btn Copy-1" width="230" height="45"/>
@@ -1143,14 +1366,15 @@
         <image name="settings" width="50" height="50"/>
         <image name="swipe" width="50" height="50"/>
         <image name="title" width="727" height="140"/>
-        <image name="user" width="512" height="512"/>
         <image name="useraccnt" width="50" height="50"/>
         <image name="username-1" width="230" height="45"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="oGN-s0-sjj"/>
+        <segue reference="6fP-0A-nfo"/>
         <segue reference="und-CS-WDw"/>
-        <segue reference="UsK-lg-tXi"/>
-        <segue reference="4Nk-qp-3DQ"/>
+        <segue reference="bMo-dL-dUi"/>
+        <segue reference="rP6-sh-yml"/>
         <segue reference="aTd-WU-DAG"/>
     </inferredMetricsTieBreakers>
 </document>

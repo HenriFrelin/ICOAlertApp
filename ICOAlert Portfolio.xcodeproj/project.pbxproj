@@ -18,6 +18,9 @@
 		BB1783D12102820D007A4CE5 /* NewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1783D02102820D007A4CE5 /* NewsController.swift */; };
 		BB1783D32102B8FC007A4CE5 /* webviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1783D22102B8FC007A4CE5 /* webviewViewController.swift */; };
 		BB1783D62102BDB2007A4CE5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1783D52102BDB2007A4CE5 /* WebKit.framework */; };
+		BB69421E21120764006ABC87 /* projectViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69421D21120764006ABC87 /* projectViewController1.swift */; };
+		BB6942202112077D006ABC87 /* projectViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69421F2112077D006ABC87 /* projectViewController2.swift */; };
+		BB69422221120792006ABC87 /* projectViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69422121120792006ABC87 /* projectViewController3.swift */; };
 		BBA7FA9221065E06009B4868 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7FA9121065E06009B4868 /* Article.swift */; };
 		BBA7FA9421065E0E009B4868 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7FA9321065E0E009B4868 /* ArticleCell.swift */; };
 		BBB4B36E21066970003E9D43 /* SwipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB4B36D21066970003E9D43 /* SwipeViewController.swift */; };
@@ -60,6 +63,9 @@
 		BB1783D02102820D007A4CE5 /* NewsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsController.swift; sourceTree = "<group>"; };
 		BB1783D22102B8FC007A4CE5 /* webviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webviewViewController.swift; sourceTree = "<group>"; };
 		BB1783D52102BDB2007A4CE5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		BB69421D21120764006ABC87 /* projectViewController1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewController1.swift; sourceTree = "<group>"; };
+		BB69421F2112077D006ABC87 /* projectViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewController2.swift; sourceTree = "<group>"; };
+		BB69422121120792006ABC87 /* projectViewController3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = projectViewController3.swift; sourceTree = "<group>"; };
 		BBA7FA9121065E06009B4868 /* Article.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		BBA7FA9321065E0E009B4868 /* ArticleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		BBB4B36D21066970003E9D43 /* SwipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +136,9 @@
 				BB1783D22102B8FC007A4CE5 /* webviewViewController.swift */,
 				BBF49CA521067EA200A117AE /* educationViewController.swift */,
 				BBBCB39121092779003A65CB /* projectViewController.swift */,
+				BB69421D21120764006ABC87 /* projectViewController1.swift */,
+				BB69421F2112077D006ABC87 /* projectViewController2.swift */,
+				BB69422121120792006ABC87 /* projectViewController3.swift */,
 				BB13CEC32107C4A700CF6B03 /* siteViewController.swift */,
 			);
 			path = "ICOAlert Portfolio";
@@ -297,11 +306,14 @@
 				BBA7FA9221065E06009B4868 /* Article.swift in Sources */,
 				BB1783D32102B8FC007A4CE5 /* webviewViewController.swift in Sources */,
 				BBF49CA621067EA200A117AE /* educationViewController.swift in Sources */,
+				BB69422221120792006ABC87 /* projectViewController3.swift in Sources */,
 				BB0A007320FC054F00FBA0FC /* ViewController.swift in Sources */,
 				BBBCB39221092779003A65CB /* projectViewController.swift in Sources */,
+				BB6942202112077D006ABC87 /* projectViewController2.swift in Sources */,
 				BB0A007120FC054F00FBA0FC /* AppDelegate.swift in Sources */,
 				BBB4B36E21066970003E9D43 /* SwipeViewController.swift in Sources */,
 				BB1783D12102820D007A4CE5 /* NewsController.swift in Sources */,
+				BB69421E21120764006ABC87 /* projectViewController1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
