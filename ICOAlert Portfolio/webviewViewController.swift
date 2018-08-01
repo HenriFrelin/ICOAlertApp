@@ -20,6 +20,7 @@ class webviewViewController: UIViewController {
 
         webview.loadRequest(URLRequest(url: URL(string: url!)!))
         // Do any additional setup after loading the view.
+        
     }
 
 

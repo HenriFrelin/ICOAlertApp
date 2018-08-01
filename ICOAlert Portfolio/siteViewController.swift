@@ -8,18 +8,18 @@
 
 import UIKit
 
-class educationViewController: UIViewController {
+class siteViewController: UIViewController {
     
     
     @IBOutlet weak var webview: UIWebView!
     
-    var url = "http://usblogs.pwc.com/emerging-technology/understanding-the-ico-infographic/"
+    var url = "https://www.icoalert.com/"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // loading website view, can be used as a universal webview template
-        // be sure to change view controller name and if using storyboard, change title
+        
         webview.loadRequest(URLRequest(url: URL(string: url)!))
+        
     }
 }
 
